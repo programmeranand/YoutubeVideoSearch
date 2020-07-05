@@ -7,6 +7,7 @@ from integrations.client import YoutubeVideoClient
 from integrations.models import YoutubeCredentials
 from videosearch.models import Setting
 from videosearch.serializers import YoutubeVideoSerializer
+
 logger = logging.getLogger(__name__)
 
 # Defining Settings keys for querying Youtube Data API
@@ -72,4 +73,3 @@ def search_and_fetch_videos():
         }
     )
     logger.info(f"Saved {len(response)} Videos to Database")
-

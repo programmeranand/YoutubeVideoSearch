@@ -6,6 +6,3 @@ def last_video_date(page_token: str):
 def video_date_to_page_token(last_video_id: str):
     page_token_list = [chr(97+int(i)) for i in str(last_video_id)]
     return ''.join(page_token_list).upper()
-
-
-

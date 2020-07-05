@@ -2,13 +2,12 @@ import datetime
 
 import pytz
 from django.core.paginator import Paginator
-from rest_framework import status, generics
+from rest_framework import generics, status
 from rest_framework.response import Response
 
-from videosearch.serializers import YoutubeVideoDeserializer
-from videosearch.helpers import (last_video_date,
-                                 video_date_to_page_token)
+from videosearch.helpers import last_video_date, video_date_to_page_token
 from videosearch.models import YoutubeVideo
+from videosearch.serializers import YoutubeVideoDeserializer
 
 VIDEOS_PER_PAGE_SETTING_KEY = 2
 
