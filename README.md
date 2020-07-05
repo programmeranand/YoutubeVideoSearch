@@ -19,7 +19,7 @@ UNIX operating System
 6. Adding Credentials :-
     - Run the server :- `python3 manage.py runserver`, server will run at :-  http://127.0.0.1:8000/
     - Open `http://127.0.0.1:8000/admin/videosearch/setting/` and add following credentials
-        * FETCH_VIDEO_KEYWORDS :- Enter Keyword to search for e.g `Programing,coding`
+        * FETCH_VIDEO_KEYWORDS :- Enter Keyword to search for e.g `Programming`
         * FETCH_VIDEO_MAX_RESULTS :- Max Results to Fetch from Youtube Data API V3 e.g `30`
         * FETCH_VIDEO_PUBLISHED_AFTER :- Timestamp in ISO Format, e.g `2019-01-01T00:00:00`
         
