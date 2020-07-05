@@ -2,8 +2,8 @@
 A Small Search engine which searches Youtube.com for videos and saves it to Database
 
 ## Prerequisites
-Python 3.6+
-UNIX operating System
+- Python 3.6+
+- UNIX operating System
     
 ### How To Run?
 1. Create a Virtual env as `python3 -m venv <VIRTUAL_ENV_NAME>`
