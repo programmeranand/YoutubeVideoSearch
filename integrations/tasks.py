@@ -30,30 +30,30 @@ def search_and_fetch_videos():
     try:
         published_after = Setting.objects.get(key=FETCH_VIDEO_PUBLISHED_AFTER_KEY).value
     except ObjectDoesNotExist:
-        published_after = '2020-06-01T00:00:00'
+        published_after = '2020-01-01T00:00:00'
 
     try:
         max_results = Setting.objects.get(key=FETCH_VIDEO_MAX_RESULTS_KEY).value
     except ObjectDoesNotExist:
-            max_results = 50
+            max_results = 25
 
     _keywords = search_keywords.split(',')
     if int(max_results) > 50:
-        _max_results = 50
+        max_results = 50
     else:
-        _max_results = int(max_results)
-    _published_after = datetime.fromisoformat(published_after)
+        max_results = int(max_results)
+    published_after = datetime.fromisoformat(published_after)
 
     youtube_client = YoutubeVideoClient(creds)
-    response = youtube_client.fetch(
+    response = youtube_client.fetch_videos(
         keywords=_keywords,
-        max_results=_max_results,
+        max_results=max_results,
         order_by='date',
-        published_after=_published_after)
+        published_after=published_after)
 
     logger.info(f"Fetched {len(response)} Videos from Youtube")
 
-    # Invoke Serializer for all Video
+    # Invoke Serializer for all Videos
     for video_data in response:
         serializer = YoutubeVideoSerializer(data=video_data)
         try:
