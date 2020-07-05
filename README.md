@@ -8,7 +8,8 @@ UNIX operating System
 ### How To Run?
 1. Create a Virtual env as `python3 -m venv <VIRTUAL_ENV_NAME>`
     - Change directory to the env `cd <VIRTUAL_ENV_NAME>`
-2. Clone the Repository inside Virtual environment :-  `git clone git@github.com:programmeranand/YoutubeVideoSearch.git`
+2. Clone the Repository inside Virtual environment :-  
+`git clone git@github.com:programmeranand/YoutubeVideoSearch.git`
     - Activate virtual environment `source bin/activate`
     - Change Directory to cloned repo `cd YoutubeVideoSearch`
      
