@@ -39,4 +39,4 @@ A Small Search engine which searches Youtube.com for videos and saves it to Data
     
 ### NOTE 
 1. Kindly Enter only valid API Credentials ans set `is_active` to True
-2. For issues Throw and Email to `ankit.anand.95@gmail.com`
+2. For issues send an Email to `ankit.anand.95@gmail.com`
