@@ -14,7 +14,7 @@ django-crontab==0.7.1
     # via -r requirements.in
 django-filter==2.3.0
     # via -r requirements.in
-django==3.0.8
+django==3.0.12
     # via
     #   django-crontab
     #   django-filter
