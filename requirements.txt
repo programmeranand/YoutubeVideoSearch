@@ -10,15 +10,15 @@ certifi==2020.6.20
     # via requests
 chardet==3.0.4
     # via requests
-django-crontab==0.7.1
-    # via -r requirements.in
-django-filter==2.3.0
-    # via -r requirements.in
-django==3.0.8
+django==3.1.13
     # via
     #   django-crontab
     #   django-filter
     #   djangorestframework
+django-crontab==0.7.1
+    # via -r requirements.in
+django-filter==2.3.0
+    # via -r requirements.in
 djangorestframework==3.11.2
     # via -r requirements.in
 idna==2.10
